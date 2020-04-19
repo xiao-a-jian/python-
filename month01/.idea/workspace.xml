@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f69126e7-b97f-4d0a-9048-470b91369166" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YmZJxRLeEEfC53LvC2tkFX5GQH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../month02" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="epidemic_information_system_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day13/day13" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day13/day13/epidemic_information_system_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exercise02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day05/day04_exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day05/day04_exercise/exercise02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/house_information_manager_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/house_information_manager_system/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/house_information_manager_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/house_information_manager_system/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="usl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/house_information_manager_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/house_information_manager_system/usl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.usl" />
+        <item itemvalue="Python.model" />
+        <item itemvalue="Python.epidemic_information_system_v1" />
+        <item itemvalue="Python.exercise02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f69126e7-b97f-4d0a-9048-470b91369166" name="Default Changelist" comment="" />
+      <created>1583549661701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583549661701</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="125" width="1653" height="732" key="DiffContextDialog" timestamp="1583934929971">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="167" y="125" width="1653" height="732" key="DiffContextDialog/67.27.1853.930@67.27.1853.930" timestamp="1583934929971" />
+    <state x="769" y="245" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584925805005">
+      <screen x="67" y="27" width="1835" height="912" />
+    </state>
+    <state x="769" y="245" key="FileChooserDialogImpl/67.27.1835.912@67.27.1835.912" timestamp="1584925805005" />
+    <state x="776" y="249" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.930@67.27.1853.930" timestamp="1584771730312" />
+    <state width="1826" height="2" key="GridCell.Tab.0.bottom" timestamp="1584771670616">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="2" key="GridCell.Tab.0.bottom/67.27.1853.930@67.27.1853.930" timestamp="1584771670616" />
+    <state width="1826" height="2" key="GridCell.Tab.0.center" timestamp="1584771670615">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="2" key="GridCell.Tab.0.center/67.27.1853.930@67.27.1853.930" timestamp="1584771670615" />
+    <state width="1826" height="2" key="GridCell.Tab.0.left" timestamp="1584771670615">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="2" key="GridCell.Tab.0.left/67.27.1853.930@67.27.1853.930" timestamp="1584771670615" />
+    <state width="1826" height="2" key="GridCell.Tab.0.right" timestamp="1584771670616">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="2" key="GridCell.Tab.0.right/67.27.1853.930@67.27.1853.930" timestamp="1584771670616" />
+    <state width="1826" height="275" key="GridCell.Tab.1.bottom" timestamp="1584771664677">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="275" key="GridCell.Tab.1.bottom/67.27.1853.930@67.27.1853.930" timestamp="1584771664677" />
+    <state width="1826" height="275" key="GridCell.Tab.1.center" timestamp="1584771664676">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="275" key="GridCell.Tab.1.center/67.27.1853.930@67.27.1853.930" timestamp="1584771664676" />
+    <state width="1826" height="275" key="GridCell.Tab.1.left" timestamp="1584771664676">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="275" key="GridCell.Tab.1.left/67.27.1853.930@67.27.1853.930" timestamp="1584771664676" />
+    <state width="1826" height="275" key="GridCell.Tab.1.right" timestamp="1584771664677">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state width="1826" height="275" key="GridCell.Tab.1.right/67.27.1853.930@67.27.1853.930" timestamp="1584771664677" />
+    <state x="308" y="105" key="SettingsEditor" timestamp="1584005219033">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="308" y="105" key="SettingsEditor/67.27.1853.930@67.27.1853.930" timestamp="1584005219033" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+练习1：
+* 假设在"图片"这个目录下工作，找到“下载”目录下的一个文件file
+ 绝对路径： /home/tarena/下载/file
+ 相对路径： ../下载/file
+
+* 假设在主目录下工作，此时根目录下有个usr目录中有个local，如何用绝对路径和相对路径表达local
+
+ / |---home--tarena--这
+   |---usr---local
+
+   绝对路径：/usr/local
+   相对路径：../../../usr/local
+
+
+练习：通过帮助文档，查看pwd命令的使用方法
+
+浏览器输入：code.tarena.com.cn
+账号：tarenacode
+密码：code_2013

@@ -1,0 +1,16 @@
+作业
+1. 三合一
+2. 当天练习独立完成
+3. 面向过程：
+   看教程：https://www.runoob.com/python3/python3-tutorial.html
+   看文档：https://docs.python.org/zh-cn/3/
+   逛社区：https://www.pythontab.com/
+   自学：str、list、dict常用方法
+   message = "  校 训 是：自强 不息,厚德  载物 ."
+   1)查找空格数量
+   2)删除前后空格
+   3)删除所有空格
+   4)查找"厚德"的位置
+
+4. 面向对象：
+    设计(不用编码)天龙八部技能系统
