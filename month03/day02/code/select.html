@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器</title>
+    <style>
+        #p1{
+                color: green;
+                font-size: 30px;
+        }
+        .red{
+            color:red;
+        }
+        p.red{
+            font-size: 60px;
+        }
+        /* p#p1{} */
+        /* #p1.red{} */
+        .center{
+            text-align: center;
+        }
+        p,h1,ul{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" class="center">
+        普通的页面元素
+    </p>
+    <p class="red center">
+        页面中的p元素
+    </p>
+    <h1 class="red">页面中的h1</h1>
+    <u class="red">页面中的u</u>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

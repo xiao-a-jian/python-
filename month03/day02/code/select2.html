@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器2</title>
+    <style>
+        #d1{
+            color: chartreuse;
+        }
+        #d1>span{
+            color: red;
+
+        }
+        #list>li{
+                    color: darkgoldenrod;
+        }
+        /* #d1>#list>li{
+            text-align: center;
+        } */
+        #d1 li{
+            text-align: center;
+        }
+        #d2{
+            width: 200px;
+            height: 200px;
+            background-color: darkturquoise;
+
+            transition: all 0.3s;
+        }
+        #d2:hover{
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d2"> </div>
+    <div id="d1">
+        div元素中的 <span>内容</span>
+        <ul id="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul> 
+    </div>
+    <span>这是div外部的span</span>
+</body>
+</html>
