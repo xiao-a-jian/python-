@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型- 内容</title>
+<style>
+.d1{
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    overflow: scroll;
+}
+.d2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-bottom-color:transparent;
+}
+.d3{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: black;
+    /* border: 50px solid green;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent; */
+}
+</style>
+
+</head>
+<body>
+    <div class="d3"></div>
+    <div class="d2"></div>
+    <div class="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem consectetur id aut earum sint voluptates qui corrupti. Quibusdam adipisci sunt modi ab quae excepturi maiores itaque nemo dicta alias?
+    </div>
+</body>
+</html>
