@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算年月日的天数</title>
+</head>
+<body>
+    <script>
+        var year = parseInt(prompt('请输入年份:'));
+        var month = parseInt(prompt('请输入月份:')); 
+        var day = parseInt(prompt('请输入日期:')); 
+
+        function getFebruaryDays(year){
+            return ((year%4==0&&year%100!=0) || year%400==0)?29:28
+        }
+        // var res = getFebruaryDays(year)
+        // console.log(res)
+        function calculateDays(year,month,day){
+            var num = 0;
+            switch(month){
+                case 12:
+                    num+=30
+                case 11:
+                    num+=31
+                case 10:
+                    num+=30
+                case 9:
+                    num+=31
+                case 8:
+                    num+=31
+                case 7:
+                    num+=30
+                case 6:
+                    num+=31
+                case 5:
+                    num+=30
+                case 4:
+                    num+=31
+                case 3:
+                    num+=getFebruaryDays(year)
+                case 2:
+                    num+=31
+                case 1:
+                    num+=day
+                    break;
+            }
+            return num;
+        }
+        var num = calculateDays(year,month,day)
+        alert('这是一年中的第'+num+'天！')
+    </script>
+</body>
+</html>

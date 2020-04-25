@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="price">
+        <span>&yen;</span>998
+    </div>
+    <div id="btn">降价</div>
+    <script>
+        var div = document.getElementById('price');
+        var btn = document.getElementById('btn');
+        console.log(div.innerHTML);
+        console.log(div.innerText);
+
+        btn.onclick = function(){
+            div.innerHTML = '<span>&yen;</span>2';
+            // div.innerText = '2';
+        }
+    </script>
+</body>
+</html>

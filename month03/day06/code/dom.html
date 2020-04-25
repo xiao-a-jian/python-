@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基础dom操作</title>
+</head>
+<body>
+    <button class="active">btn1</button>
+    <button class="active">btn2</button>
+    <button class="active">btn3</button>
+    <button>btn4</button>
+    <button>btn5</button>
+
+    <script>
+        var btns = document.getElementsByTagName('button');
+        console.log(btns);
+
+        var actives = document.getElementsByClassName('active');
+        console.log(actives);
+        for(var i=0;i<actives.length;i++){
+            actives[i].onclick = function( ){
+                console.log(this.innerHTML) 
+            }
+        }
+
+
+
+
+
+        // for (var i=0;i<btns.length;i++){
+        //     btns[i].onclick = function(i_inner ){
+        //         return function( ){
+        //             alert('第'+(i_inner+1) +'个按钮')
+        //         }            
+        //     }(i)
+        // }
+        // console.log(i)
+
+        // for (let i=0;i<btns.length;i++){
+        //     btns[i].onclick = function( ){
+        //             alert('第'+(i+1) +'个按钮')
+        //         }            
+        //     }
+        // console.log(i)
+
+    </script>
+</body>
+</html>
