@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if 语句</title>
+</head>
+<body>
+    <script>
+    var age = prompt('请输入年龄');
+    // console.log(typeof age);
+    // if(age>=18){
+    //     alert('允许访问!');
+    // }else{
+    //     alert('禁止访问!')
+    // }
+
+    if(age<18){
+        alert('少年')
+    }else if(age>=18 && age<30){
+        alert('青年')
+    }else if(age>=30 && age<=50){
+        alert('中年')
+    }else{
+        alert('老年')
+    }
+    </script>
+</body>
+</html>
