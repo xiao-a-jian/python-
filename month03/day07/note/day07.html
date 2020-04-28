@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>day07.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>[TOC]</p>
+<h1 id="%E4%B8%80bom-%E5%AF%B9%E8%B1%A1">一、BOM 对象</h1>
+<h2 id="1-bom-%E4%BB%8B%E7%BB%8D">1. BOM 介绍</h2>
+<p>​		BOM全称为“Browser Object Model”，浏览器对象模型。提供一系列操作浏览器的属性和方法。核心对象为window对象，不需要手动创建，跟随网页运行自动产生，直接使用，在使用时可以省略书写。</p>
+<h2 id="2-%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95">2. 对象方法</h2>
+<ol>
+<li>
+<h5 id="%E7%BD%91%E9%A1%B5%E5%BC%B9%E6%A1%86">网页弹框</h5>
+<pre class="hljs"><code><div>alert()		<span class="hljs-comment">//警告框</span>
+confirm()	<span class="hljs-comment">//确认框</span>
+</div></code></pre>
+</li>
+<li>
+<h5 id="%E5%AE%9A%E6%97%B6%E5%99%A8%E6%96%B9%E6%B3%95">定时器方法</h5>
+</li>
+</ol>
+<p><img src="assets\setInterval函数2.png" alt="setInterval函数2"></p>
+<p><strong>周期性定时器</strong>
+作用：每隔一段时间就执行一次代码</p>
+<pre class="hljs"><code><div><span class="hljs-comment">//开启定时器:</span>
+<span class="hljs-keyword">var</span> timerID = setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>,<span class="hljs-title">interval</span>);
+/*
+参数 :
+ <span class="hljs-title">function</span> : 需要执行的代码,可以传入函数名;或匿名函数
+ <span class="hljs-title">interval</span> : 时间间隔,默认以毫秒为单位 1<span class="hljs-title">s</span> = 1000<span class="hljs-title">ms</span>
+返回值 : 返回定时器的<span class="hljs-title">ID</span>,用于关闭定时器
+*/
+</span></div></code></pre>
+<p>关闭定时器 :</p>
+<pre class="hljs"><code><div><span class="hljs-comment">//关闭指定id对应的定时器</span>
+clearInterval(timerID);
+</div></code></pre>
+<p><img src="assets\setTimeout函数3.png" alt="setTimeout函数3"></p>
+<p><strong>一次性定时器</strong>
+作用：等待多久之后执行一次代码</p>
+<pre class="hljs"><code><div><span class="hljs-comment">//开启超时调用:</span>
+<span class="hljs-keyword">var</span> timerId = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>,<span class="hljs-title">timeout</span>);
+//关闭超时调用:
+<span class="hljs-title">clearTimeout</span>(<span class="hljs-params">timerId</span>);
+</span></div></code></pre>
+<h2 id="3-%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7">3. 对象属性</h2>
+<p>window的大部分属性又是对象类型</p>
+<ol>
+<li>
+<h5 id="history">history</h5>
+<p>作用：保存当前窗口所访问过的URL
+属性 :  length 表示当前窗口访问过的URL数量
+方法 :</p>
+<pre class="hljs"><code><div>back() 对应浏览器窗口的后退按钮，访问前一个记录
+forward() 对应前进按钮，访问记录中的下一个URL
+</div></code></pre>
+</li>
+<li>
+<h5 id="location">location</h5>
+<p>作用：保存当前窗口的地址栏信息(URL)
+属性 :  href 设置或读取当前窗口的地址栏信息
+方法 :</p>
+<pre class="hljs"><code><div>reload(param) 重载页面(刷新)
+参数为布尔值，默认为 false，表示从缓存中加载，设置为true,强制从服务器根目录加载
+</div></code></pre>
+</li>
+</ol>
+<h1 id="%E4%BA%8Cdom%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">二、DOM节点操作</h1>
+<p>DOM全称为 “Document Object Model”，文档对象模型，提供操作HTML文档的方法。（注：每个html文件在浏览器中都视为一篇文档,操作文档实际就是操作页面元素。）</p>
+<h2 id="1-%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1">1. 节点对象</h2>
+<p>JavaScript 会对 html 文档中的元素、属性、文本甚至注释进行封装，称为节点对象，提供相关的属性和方法。</p>
+<h2 id="2-%E8%AE%BF%E9%97%AE%E8%8A%82%E7%82%B9">2. 访问节点</h2>
+<ul>
+<li>元素节点   ( 操作标签）</li>
+<li>属性节点（操作标签属性）</li>
+<li>文本节点（操作标签的文本内容）</li>
+</ul>
+<p>标签属性都是元素节点对象的属性,可以使用点语法访问，例如：</p>
+<pre class="hljs"><code><div>h1.id = <span class="hljs-string">"d1"</span>; 		 <span class="hljs-comment">//set 方法</span>
+<span class="hljs-built_in">console</span>.log(h1.id);  <span class="hljs-comment">//get 方法</span>
+h1.id = <span class="hljs-literal">null</span>;		<span class="hljs-comment">//remove 方法</span>
+</div></code></pre>
+<p>注意 :</p>
+<ul>
+<li>属性值以字符串表示</li>
+<li>class属性需要更名为 className，避免与关键字冲突，例如：
+h1.className = &quot;c1 c2 c3&quot;；</li>
+</ul>
+<h2 id="3-%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0%E6%A0%B7%E5%BC%8F">3. 操作元素样式</h2>
+<ol>
+<li>为元素添加 id、class属性，对应选择器样式</li>
+<li>操作元素的行内样式，访问元素节点的style属性，获取样式对象；样式对象中包含CSS属性，使用点语法操作。</li>
+</ol>
+<pre class="hljs"><code><div>p.style.color = <span class="hljs-string">"white"</span>;
+p.style.width = <span class="hljs-string">"300px"</span>;
+p.style.fontSize = <span class="hljs-string">"20px"</span>;
+</div></code></pre>
+<p>注意 :</p>
+<ul>
+<li>属性值以字符串形式给出，单位不能省略</li>
+<li>如果css属性名包含连接符，使用JS访问时，一律去掉连接符,改为驼峰， font-size -&gt; fontSize</li>
+</ul>
+
+</body>
+</html>

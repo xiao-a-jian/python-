@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="btn" class="btn1">click me</button>
+    <h1 id="show">
+        请输入...
+    </h1>
+    <script>
+    var btn = document.getElementsByClassName('btn1')[0];
+    var text = document.getElementById('text');
+    var show = document.getElementById('show');
+
+    btn.onclick = function( ){
+        show.innerHTML = text.value;
+        text.value = ' ';
+    }
+    </script>
+</body>
+</html>

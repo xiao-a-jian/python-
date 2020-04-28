@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表达式匹配</title>
+</head>
+<body>
+    <script>
+        // var reg1 = /this/;
+        // console.log(reg1);
+        // var reg2 = new RegExp('this')
+        // console.log(reg2)
+
+
+        // var str = 'this is a test string';
+        // var res = reg1.test(str);
+        // console.log(res)
+        // console.log(reg2.test(str));
+
+        // var str = 'This is a test string';
+        // // var reg = /this/ig;
+        // var reg = new RegExp('is','ig');
+        // console.log(reg.test(str));
+        // console.log(reg.test(str));
+        // reg.lastIndex = 0;
+        // console.log(reg.test(str));
+
+        var str = 'This is a test string';
+        var reg = /is/g;
+
+        // var res = str.match(reg);
+        // console.log(res);
+        // var res = str.replace(reg,'at');
+        // console.log(res);
+
+        var res = str.match('this');
+        console.log(res)
+    </script>
+</body>
+</html>

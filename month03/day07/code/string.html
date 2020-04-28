@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字符串</title>
+</head>
+<body>
+    <div id="text">This is a text string</div>
+    <button id="btn">click me</button>
+    <script>
+        var btn = document.getElementById('btn');
+        var div = document.getElementById('text');
+        var str = div.innerText;
+
+        btn.onclick = function( ){
+            // res = str.toUpperCase( );
+            // res = str.toLowerCase( );
+            // div.innerText = res;
+
+            // res = str.small( )
+
+            // var index = prompt('请输入一个索引值')
+            // var res = "指定位置的字符为"+str.charAt(index)+",指定位置的字符编码为"+str.charCodeAt(index );
+
+            var res = str.split(' ').reverse( ).join(' ')
+
+            div.innerHTML= res
+        }
+
+
+
+
+
+
+
+
+        // var str = "laowang";
+        // var str2 = new String("maria");
+        // console.log(str);
+        // console.log(str2);
+        // console.log(str[0]);
+        // console.log(str2[0]);
+        // str[0] = 't';
+        // console.log(str);
+    </script>
+</body>
+</html>

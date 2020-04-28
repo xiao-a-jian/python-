@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组</title>
+</head>
+<body>
+    <script>
+    var arr = [1,2,3,4];
+    console.log(arr);
+
+    var arr2 = new Array(3);
+    console.log(arr2);
+
+    arr2[0] = 1;
+    arr2[1] = '二';
+    arr2[2] = '三';
+    arr2[4] = '四'
+    console.log(arr2)
+
+    for (var i in arr){
+        console.log(i);
+        console.log(arr[i]);
+    }
+
+
+
+    var arr = [1,2,3,4]
+    arr.push(5,6,7);
+    console.log(arr);
+    arr.pop();
+    console.log(arr);
+
+    var arr = [1,2,3,4]
+    arr.splice(1,2);
+    console.log(arr);
+
+    var arr = [1,2,3,4];
+    arr.splice(1,2,'666','JS','HTML');
+    console.log(arr);
+
+    console.log(arr.toString());
+    console.log(arr.join('/'));
+    console.log(arr.reverse());
+
+    var arr = [56,6,468,46]
+    console.log(arr.sort())
+    arr.sort(sortASC);
+    console.log(arr);
+
+    function sortASC(a,b){
+        return a-b
+    }
+
+    function sortDESC(a,b){
+        return b-a
+    }
+
+    var arr = [[1,2,3],[4,5,6],[7,8,9]]
+    var arr2 = arr[1][1]
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="img" src="../imgs/bk0-8.jpg" alt="">
+        <p id="title">
+            JavaScript高级程序设计
+        </p>
+        <script>
+            // 在页面中随机显示图片和文字
+            var booklist =  [
+                {'imgUrl':'../imgs/bk0-8.jpg','title':'JavaScript高级程序设计'},
+                {'imgUrl':'../imgs/bk1-8.jpg','title':'JavaScript从入门到精通'},
+                {'imgUrl':'../imgs/bk2-8.jpg','title':'JavaScript权威指南'},
+                {'imgUrl':'../imgs/bk3-8.jpg','title':'JavaScript编程艺术'},
+                {'imgUrl':'../imgs/bk4-8.jpg','title':'python学习手册'},
+
+            ]
+            // Math.floor(Math.random( )*11)
+            var i = Math.floor(Math.random()*booklist.length);
+            var img = document.getElementById('img');
+            var title = document.getElementById('title');
+            var book = booklist[i];
+            img.src = book.imgUrl;
+            title.innerHTML = book.title;
+
+
+
+        </script>
+    </div>
+</body>
+</html>
