@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nav</title>
+    <style>
+    ul,li{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+    .nav{
+            width: 400px;
+            background-color:yellow;
+        }
+    .nav>li{
+        display: inline-block;
+    }
+    .first{
+        color: grey;
+        margin: 10px 20px;
+    }
+    .item{
+        margin: 10px 10px;
+        padding: 0 5px;
+        transition: all 0.5s;
+    }
+    .item:hover{
+        background-color: red;
+        color:snow;
+        cursor: pointer;
+    }
+    .active{
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="first">难度:</li>
+        <li class="item">全部</li>
+        <li class="item">初级</li>
+        <li class="item active">中级</li>
+        <li class="item">高级</li>
+    </ul>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $('.item').click(function(){
+                // $('.item').removeClass('active');
+                // $(this).addClass('active');
+                $(this).toggleClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+    <script>
+        // var btns = document.getElementsByClassName('item');
+        // for(var i=0;i<btns.length;i++){
+        //     btns[i].onclick = function( ){
+        //         // alert('hello')
+        //         for(var j=0;j<btns.length;j++){
+        //             btns[j].setAttribute('class','item');
+        //         }
+        //         this.setAttribute('class','item active')
+        //         // for(var j=0;j<btns.length;j++){
+        //         //     if (btns[j] == this){
+        //         //         continue
+        //         //     }
+        //         //     btns[j].setAttribute('class','item');
+        //         // }
+        //     }
+        // }
+        
+    </script>
+</body>
+</html>

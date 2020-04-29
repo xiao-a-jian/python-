@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="active">白日依山尽</li>
+        <li>黄河入海流</li>
+        <li>欲穷千里目</li>
+        <li >更上一层楼</li>
+    </ul>
+    <p>白居易</p>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $('li:not(li:last)').css('color','red')
+
+        // $('li:first').css('color','red');
+        // $('li:last').css("font-size",'30px');
+
+        // $('li:odd').css('background-color','pink')
+        // $('li:even').css('background-color','aqua')
+
+        // $('li:eq(2)').css('color','red')
+        // $('li').eq(2).css('color','red')
+
+        // $('li:gt(1)').css('border','1px solid red')
+        // $('li:lt(3)').css("text-align",'center')
+
+
+
+            // $('li.active+li').css('color','orange');
+            // $('li.active+.last').css('color','red')
+
+            // $('li.active~li').css('background-color','pink');
+
+            // var items = $('ul>li')
+            // items.css('background-color','pink');
+            // $('ul,li').css('padding','0').css('margin','0');
+            // $('ul').css('list-style','none');
+            // $('li.active').css('color','red');
+        </script>
+</body>
+</html>

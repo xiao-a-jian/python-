@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择省份</title>
+</head>
+<body>
+    <form action="#">
+        <select name="prov" id="prov"></select>
+        <select name="city" id="city"></select>
+        <select name="area" id="area"></select>
+    </form>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script>
+        var $prov=$('#prov');
+        var $city= $('#city');
+        var $area=$('#area');
+        $(function(){
+            $prov.html("<option value='0'>请选择</option>")
+            $city.html("<option value='0'>请选择</option>")
+            $area.html("<option value='0'>请选择</option>")
+            $.each(data,function(i,e){
+                $prov.append("<option value='"+e.provId+"'>"+
+                    e.provname+"</option>")
+            })
+        })
+
+        $prov.on("change",function(){
+            $.each(data,function(i,e){
+                if ($prov.val()==e.provId){
+                    $city.html("<option value='0'>请选择</option>");
+                    $.each(e.citys,function(i,e2){
+                        $city.append("<option value='"+e2.cityId+"'>"
+                            +e2.cityname+
+                            "</option>")
+                    })
+                }
+            })
+            if ($prov.val()==0){
+                $city.html("<option value='0'>请选择</option>");
+            }
+            if ($city.val()==0){
+                $area.html("<option value='0'>请选择</option>");
+            }
+        })
+
+        $city.on("change",function(){
+            $.each(data,function(i,e){
+                if ($prov.val()==e.provId){
+                    $.each(e.citys,function(i,e){
+                        if ($city.val()==e2.cityId){
+                            $area.html("");
+                            $.each(e2.areas,function(i,e3){
+                                $area.append("<option value='"+e3.areaId+"'>"
+                                    +e3.areaname+"</option>")
+                            })
+                        }
+                    })
+                }
+            })
+            if ($city.val()==0){
+                $area.html("<option value='0'>请选择</option>");
+            }
+        })
+    </script>
+    
+</body>
+</html>

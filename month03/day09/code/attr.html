@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        姓名: <input type="text">
+    </div>
+    <div>
+        密码: <input type="password">
+    </div>
+    <div>
+        <input id="rem" type="checkbox">记住密码
+    </div>
+    <button id="btn">提交</button>
+
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $('#btn').click(function(){
+            // console.log($('#rem').attr('checked'));
+            $('#rem').prop('checked')?alert('记住密码后成功登录'):alert('直接登录')
+        })
+    </script>
+</body>
+</html>
