@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">stop</button>
+    <button id="btn1">run</button>
+    <button id="btn2">后退</button>
+    <script>
+        var btn2 = document.getElementById('btn2');
+        btn2.onclick = function(){
+            history.back();
+        }
+        // var res = confirm('确定要删除吗?');
+        // console.log(res);
+
+        function say(){
+            console.log('666')
+        }
+        // setInterval(say,1000);
+
+            var timer =  setInterval(say,1000);
+
+            var btn = document.getElementById('btn');
+            var btn1 = document.getElementById('btn1');
+            btn.onclick = function(){
+                clearInterval(timer)
+            }
+            btn1.onclick = function(){
+                timer =  setInterval(say,1000);
+            }
+    </script>
+</body>
+</html>

@@ -7,6 +7,18 @@
     <title>日期对象</title>
 </head>
 <body>
-    
+    <script>
+        var dt = new Date( )
+        console.log(dt);
+        var wuyi = new Date('2020-05-01');
+        console.log(wuyi);
+        var wuyi = new Date('2020/05/01 12:00:00');
+        console.log(wuyi);
+
+
+        var times = wuyi.getTime() - dt.getTime();
+        console.log(times);
+        console.log(wuyi-dt);
+    </script>
 </body>
 </html>

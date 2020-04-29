@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>倒计时</title>
+    <style>
+        div{
+            
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="h">00</span>
+        :
+        <span id="m">00</span>
+        :
+        <span id="s">00</span>
+    </div>
+    <script>
+        function addZero(num){
+            return num<10?'0'+num:num+' '
+        }
+
+        function countDown(){
+            var now = new Date();
+            var target = new Date('2020-5-1 00:00:00');
+            var times = parseInt ((target - now)/1000);
+            if (times<=0){
+                alert('已超过时间')
+                clearInterval(timer);
+                return;
+            }
+            console.log(times);
+            var h = parseInt(times/3600);
+            var m = parseInt(times/60 %60);
+            var s = times % 60;
+            console.log(h,m,s)
+
+            var hour = document.getElementById('h');
+            var min= document.getElementById('m');
+            var sec = document.getElementById('s');
+            hour.innerHTML = addZero(h);
+            min.innerHTML = addZero(m);
+            sec.innerHTML = addZero(s);
+        }
+
+        var timer = setInterval(countDown, 1000);
+    </script>
+</body>
+</html>
