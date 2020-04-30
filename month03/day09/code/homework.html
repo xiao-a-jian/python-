@@ -50,11 +50,12 @@
         $city.on("change",function(){
             $.each(data,function(i,e){
                 if ($prov.val()==e.provId){
-                    $.each(e.citys,function(i,e){
+                    $.each(e.citys,function(i,e2){
                         if ($city.val()==e2.cityId){
                             $area.html("");
                             $.each(e2.areas,function(i,e3){
-                                $area.append("<option value='"+e3.areaId+"'>"
+                                $area.append("<option value='"
+                                +e3.areaId+"'>"
                                     +e3.areaname+"</option>")
                             })
                         }
